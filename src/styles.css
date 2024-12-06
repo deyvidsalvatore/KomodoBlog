@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-white: #f2f2f2;
+  --color-black: #000;
+  --dark-grey: #2c2c2c;
+  --darkest-grey: #202020;
+  --color-red: #e83f5b;
+  --color-green: #4cd62b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--darkest-grey);
+}
+
+.msg-error {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.msg-success {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: var(--darkest-grey);
+    background-image: url('/assets/img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 25rem;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 15rem;
+    animation: backgroundFadeIn 2s;
+  }
+
+  @keyframes backgroundFadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
