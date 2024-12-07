@@ -8,7 +8,7 @@ import { Observable, BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class PostService {
-  public baseUrl: string = 'http://localhost:3001/posts';
+  public baseUrl: string = 'https://labdioblogangular.onrender.com/posts';
 
   private editModeSource = new BehaviorSubject<Post | null>(null);
   editMode$ = this.editModeSource.asObservable();

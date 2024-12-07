@@ -1,59 +1,80 @@
-# PersonalBlog
+# Komodo Blog - Mock Blog
+![alt text](docs/image2.png)
+![alt text](docs/image1.png)
+## 📝 Description
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+The **Komodo Blog** is a web application developed with **Angular** that simulates basic blog functionalities. It allows users to create, view, edit, and delete posts. This application is ideal for learning purposes, prototyping, and practicing HTTP service integration, state management, and using Angular Material.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Features
 
+- **Create New Posts:**  
+  Allows users to create a new post by entering information like title, subtitle, content, and associated user.
+  
+- **Edit Posts:**  
+  Enables editing of any existing post via a responsive modal.
+
+- **Delete Posts:**  
+  Allows deleting posts directly from the user interface.
+
+- **Responsive Interface:**  
+  Optimized for mobile devices, tablets, and desktops to ensure a seamless user experience.
+
+- **Feedback Messages:**  
+  Integrated with Angular Material's messaging system to provide quick feedback to users.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend:**  
+  - Angular 19+
+  - Angular Material  
+  - RxJS for reactivity and event handling.
+  - Angular Forms (Template-driven forms and reactive state).
+
+- **HTTP Requests:**  
+  Using `provideHttpClient()` for REST service integration.
+
+- **UI/UX:**  
+  Using Angular Material to create beautiful, modern, and responsive components.
+
+## 🛠️ Setup and Run Instructions
+1. Clone the Repository
 ```bash
-ng serve
+git clone https://github.com/your-username/komodo-blog.git
+cd komodo-blog
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Install Dependencies
 ```bash
-ng generate component component-name
+npm install
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. Start
 ```bash
-ng generate --help
+npm start
 ```
+## 📄 Technologies & Tools
 
-## Building
+### ⚙️ Tools Used:
 
-To build the project run:
+- **Angular CLI:**  
+  A command-line tool for initializing and developing Angular applications.
 
-```bash
-ng build
-```
+- **Angular Material:**  
+  UI framework for building responsive and accessible user interfaces.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **RxJS:**  
+  Reactive programming with observables for asynchronous event handling.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 💬 Contributing
 
-```bash
-ng test
-```
+We welcome contributions! If you would like to contribute, feel free to submit a **Pull Request**.  
+If you find any bugs or have suggestions, please open an **Issue** on the repository.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🏆 License
+Distributed under the **MIT License**. See the [LICENSE](https://mit-license.org/) for details.
