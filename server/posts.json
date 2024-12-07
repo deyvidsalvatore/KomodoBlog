@@ -5,28 +5,35 @@
       "title": "Introduction to Angular",
       "postContent": "Angular is a powerful, open-source platform and framework designed for building dynamic, single-page client applications with HTML, CSS, and TypeScript. Developed and maintained by Google, Angular allows developers to create complex web applications with modular architecture and an intuitive component-based structure. It provides features like two-way data binding, dependency injection, routing, and tools for efficient testing. Whether you are building e-commerce platforms, dashboards, or enterprise web applications, Angular can streamline your development process with its robust tooling and scalability.",
       "subtitle": "Getting started with Angular",
-      "id": 1
+      "id": "1"
     },
     {
       "user": "deyvidsalvatore",
       "title": "Advanced Angular Features",
       "postContent": "When building large-scale Angular applications, mastering advanced features like RxJS, lazy loading, and state management with NgRx can significantly improve performance, scalability, and maintainability. RxJS offers a reactive programming model that simplifies asynchronous event handling, while lazy loading ensures that only necessary modules are loaded when needed. Additionally, implementing NgRx allows for predictable state management by centralizing application state, making it easier to debug, test, and manage application logic as it scales.",
       "subtitle": "Master the power of RxJS and lazy loading",
-      "id": 2
+      "id": "2"
     },
     {
       "user": "deyvidsalvatore",
       "title": "Spring Boot Basics",
       "postContent": "Spring Boot is an open-source Java-based framework that simplifies the development of production-ready, stand-alone, and production-grade Spring applications. Designed to reduce boilerplate configuration, Spring Boot allows developers to quickly build microservices, RESTful APIs, and enterprise-level applications. The platform provides built-in tools for dependency management, embedded servers, and configuration properties. Whether you are setting up a small service or a complex multi-service architecture, Spring Boot provides a highly efficient way to start and run your application with minimal effort.",
       "subtitle": "Learn the foundation of back-end development",
-      "id": 3
+      "id": "3"
     },
     {
       "user": "deyvidsalvatore",
       "title": "Building REST APIs with Spring Boot",
       "postContent": "RESTful APIs are the backbone of modern web and mobile applications, and Spring Boot provides a seamless approach to designing and implementing these APIs. Using REST principles with Spring Boot, you can create endpoints to manage client-server communication effectively. This involves setting up controllers, defining routes, and connecting them to services or repositories, adhering to RESTful conventions. With Spring Boot's annotation-driven programming model and built-in database support, implementing endpoints is efficient and straightforward. This allows front-end developers to integrate services and data seamlessly with their applications.",
       "subtitle": "REST APIs with clean architecture principles",
-      "id": 4
+      "id": "4"
+    },
+    {
+      "id": "1e68",
+      "user": "sergiodevsousa",
+      "title": "Portfólio do Sérgio",
+      "subtitle": "Meu portfólio",
+      "postContent": "Meu Portfólio Profissional🌟\nBem-vindo ao meu portfólio! Aqui você encontrará os principais projetos que desenvolvi, minhas habilidades técnicas e informações sobre minha experiência profissional.\n\nSobre Mim🧑‍💻\nSou um desenvolvedor apaixonado por criar soluções inovadoras e eficientes. Tenho experiência em desenvolvimento web e sempre busco aprender e me aperfeiçoar. Amo transformar ideias em projetos funcionais e escaláveis.\n\nFormação🎓\nEstudante de Análise de Desenvolvimento de Sistema pela UNIFATECIE e formação Front-End pela ALURA T6 ORACLE ON\n\nAtualmente trabalhando como🎓\nAutônomo PJ com suporte técnico e revenda de software além de desenvolver aplicações web Front-End.\n\nAprendendo 🌱\nReact Native, Typescript e reciclando junto a DIO\n\nLocalização📍\nJoão Pessoa/Paraíba-Brasil\n\nPrincipais Projetos🚀\n📌 Análise de Documentos AI Azure Descrição: Aplicação onde enviamos a imagem de um cartão de crédito para que seja validada pela IA da Azure. Tecnologias:"
     }
   ]
 }
