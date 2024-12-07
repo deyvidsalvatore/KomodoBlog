@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  constructor(private dialog: MatDialog) {}
 
+  about() {
+    this.dialog.open(AboutComponent);
+  }
 }
