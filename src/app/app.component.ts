@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <app-header/>
+    <app-new-post-card class="" />
     <router-outlet />
   `,
   standalone: false,
