@@ -5,7 +5,7 @@ h1 {
   position: absolute;
   margin: 2.5rem 2rem;
   animation: backgroundFadeIn 2s;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 h1:hover {
@@ -18,7 +18,7 @@ h1:hover {
   width: 80vw;
 }
 
-.card-post {
+.card-posts {
   margin: 20rem 30px;
   position: absolute;
   width: 80vw;
@@ -46,6 +46,7 @@ h1:hover {
     margin: 300px 0 0 50px;
     width: 65vw;
   }
+
   .card-posts {
     margin: 450px 0 0 50px;
     width: 65vw;
@@ -55,11 +56,12 @@ h1:hover {
     display: flex;
     margin-top: 300px;
     right: 40px;
-    position: fixed;
     width: 22vw;
+    position: fixed;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-content: center;
   }
 }

@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
-import { Post } from '../../models/Post';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { Component, OnInit } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 import { PostService } from '../../../core/services/post.service';
+import { Post } from '../../models/Post';
 
 @Component({
   selector: 'app-new-post-form',
   standalone: false,
   templateUrl: './new-post-form.component.html',
-  styleUrl: './new-post-form.component.css'
+  styleUrls: ['./new-post-form.component.css']
 })
-export class NewPostFormComponent {
-  disabled = true;
+export class NewPostFormComponent implements OnInit {
+  isEditMode = false;
   post: Post = {
     user: '',
     title: '',
@@ -19,26 +19,43 @@ export class NewPostFormComponent {
   };
 
   constructor(
-    private dialog: MatDialog,
     private dialogRef: MatDialogRef<any>,
     private postService: PostService
   ) {}
 
+  ngOnInit() {
+    this.postService.editMode$.subscribe((post) => {
+      if (post) {
+        this.isEditMode = true;
+        this.post = { ...post };
+      } else {
+        this.isEditMode = false;
+        this.post = {
+          user: '',
+          title: '',
+          subtitle: '',
+          postContent: '',
+        };
+      }
+    });
+  }
+
   publish() {
-    this.postService.newPost(this.post).subscribe(() => {
-      this.dialog.closeAll();
-      this.postService.showMessage('New post added', true);
-      setTimeout(() => {
-        window.location.reload();
-      }, 1000);
-    })
+    if (this.isEditMode) {
+      this.postService.updatePost(this.post).subscribe(() => {
+        this.dialogRef.close();
+        this.postService.showMessage('Post updated successfully', true);
+      });
+    } else {
+      this.postService.newPost(this.post).subscribe(() => {
+        this.dialogRef.close();
+        this.postService.showMessage('New post added', true);
+      });
+    }
   }
 
   cancel() {
-    if (this.post.postContent != "") {
-      this.dialog.open(NewPostFormComponent);
-    } else {
-      this.dialogRef.close();
-    }
+    this.postService.clearEditMode();
+    this.dialogRef.close();
   }
 }

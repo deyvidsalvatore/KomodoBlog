@@ -7,6 +7,8 @@ import { NewPostCardComponent } from './cards/new-post-card/new-post-card.compon
 import { NewPostFormComponent } from './forms/new-post-form/new-post-form.component';
 import { FormsModule } from '@angular/forms';
 import { NewPostActionsComponent } from './forms/new-post-form/new-post-actions/new-post-actions.component';
+import { PostsComponent } from './views/posts/posts.component';
+import { PostsButtonComponent } from './views/posts/posts-button/posts-button.component';
 
 
 
@@ -15,7 +17,9 @@ import { NewPostActionsComponent } from './forms/new-post-form/new-post-actions/
     HeaderComponent,
     NewPostCardComponent,
     NewPostFormComponent,
-    NewPostActionsComponent
+    NewPostActionsComponent,
+    PostsComponent,
+    PostsButtonComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +30,10 @@ import { NewPostActionsComponent } from './forms/new-post-form/new-post-actions/
   exports: [
     HeaderComponent,
     NewPostCardComponent,
-    NewPostFormComponent
+    NewPostFormComponent,
+    NewPostActionsComponent,
+    PostsComponent,
+    PostsButtonComponent
   ]
 })
 export class SharedModule { }

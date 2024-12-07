@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <app-header/>
     <h1>Welcome to the project <span>.</span></h1>
     <app-new-post-card class="card-actions" />
-    <router-outlet />
+    <app-posts class="card-posts"></app-posts>
   `,
   standalone: false,
   styleUrl: './app.component.css'
