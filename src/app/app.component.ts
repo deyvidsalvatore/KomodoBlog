@@ -4,11 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <app-header/>
-    <app-new-post-card class="" />
+    <h1>Welcome to the project <span>.</span></h1>
+    <app-new-post-card class="card-actions" />
     <router-outlet />
   `,
   standalone: false,
-  styles: []
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'personal-blog';

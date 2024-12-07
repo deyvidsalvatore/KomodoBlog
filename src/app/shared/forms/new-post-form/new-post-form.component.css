@@ -1,30 +1,118 @@
+[aria-hidden="true"] {
+  display: unset !important;
+  pointer-events: unset;
+}
+
+mat-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 400px;
+  margin: 1rem auto;
+  transition: all 0.3s ease;
+}
+
+mat-card-title,
+mat-card-subtitle {
+  text-align: center;
+  color: #333333;
+  font-weight: 500;
+}
+
+mat-card-content {
+  margin-bottom: 1.5rem;
+}
+
 mat-form-field {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+mat-form-field .mat-form-field-label {
+  font-size: 0.95rem;
+  color: #555555;
+}
+
+textarea.textareaContent {
+  resize: vertical;
+  min-height: 90px;
+  padding: 0.6rem;
+}
+
+mat-card-actions {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: nowrap;
-  margin: .5rem;
+  justify-content: space-between;
+  margin-top: 0.8rem;
 }
 
-.mat-card-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+button.mat-button {
+  border-radius: 4px;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
 }
 
-.textArea {
-  margin-top: 1rem;
+button.mat-button:hover {
+  background-color: #eeeeee;
 }
 
-.textAreaContent {
-  overflow: hidden;
+button.mat-button[color="primary"] {
+  background-color: #3f51b5;
+  color: #ffffff;
 }
 
-@media screen and (min-width: 425px) {
-  ::ng-deep .mat-dialog-container {
-    width: 35rem;
+button.mat-button[color="warn"] {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+button.mat-button[color="primary"]:hover {
+  background-color: #303f9f;
+}
+
+button.mat-button[color="warn"]:hover {
+  background-color: #d32f2f;
+}
+
+@media screen and (max-width: 768px) {
+  mat-card {
+    padding: 1rem;
+    max-width: 90%;
   }
-  
+
+  button.mat-button {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  mat-form-field {
+    font-size: 0.9rem;
+  }
+
+  textarea.textareaContent {
+    min-height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  mat-card {
+    padding: 0.8rem;
+    max-width: 100%;
+  }
+
+  mat-form-field,
+  textarea.textareaContent {
+    font-size: 0.85rem;
+  }
+
+  button.mat-button {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  textarea.textareaContent {
+    min-height: 70px;
+  }
 }
